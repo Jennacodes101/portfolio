@@ -1,0 +1,88 @@
+/* Nav */
+.nav{
+  margin-top: 10px !important;
+}
+
+body{
+  background-image: url("images/iceland3.jpg"), url("../../images/ghana2.jpg") !important;
+}
+
+/* Main */
+#me-main {
+  justify-content: center;
+  margin: auto;
+  display:block ;
+  max-width: 54em;
+  padding: 4em 4em 4em 4em;
+  width: calc(100% - 35%);
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255) 95%);
+  border-radius: 12px;
+}
+
+  #me-main > section {
+    border-top: solid 2px #efefef;
+    margin: 4em 0 0 0;
+    padding: 4em 0 0 0;
+  }
+
+    #me-main > section:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+/* Images */
+
+.intro {
+  max-width: 30em;
+}
+
+/* Learn More tab */
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 4px 4px 0px 0px;
+  background-color: #f1f1f1;
+  min-width:
+}
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color:inherit;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
