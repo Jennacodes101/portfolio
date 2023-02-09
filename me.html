@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      Me | Jenna Castillo
+    </title>
+    <meta charset="utf-8" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link rel="icon" href="images/jc icon.png">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+      <link rel="stylesheet" href="assets/css/segmented-control.sass" />
+      <link rel="stylesheet" href="assets/css/me.css" />
+
+  </head>
+
+  <body class="is-preload">
+
+    <!-- nav -->
+    <div class="nav row">
+      <div class="col-8 col-12-small">
+        <ul class="labeled-icons">
+          <li>
+            <a href="index.html" class="icon solid fa-arrow-left">
+              Back to home
+            </a>
+          </li>
+        </ul>
+      </div>
+    <!-- Main -->
+    <div id="me-main">
+      <!-- <section id="intro" class="align-center">
+        <header>
+          <h1 > Hello!</h1>
+        </header>
+        <div class="row">
+          <div class="col-6 col-12-small">
+            <a href="#" class="image avatar intro"><img src="images/profile_2.jpg" alt=""/></a>
+          </div>
+          <div class="col-6 col-12-small">
+          <p>
+
+          </p>
+          </div>
+        </div>
+      </section> -->
+      <section id="learn-more">
+        <header>
+          <h1> Want to know more?</h1>
+        </header>
+        <div class="tab">
+          <button class="tablinks" onclick="openBlog(event, 'Background')">My Background</button>
+          <button class="tablinks" onclick="openBlog(event, 'Education')">Education</button>
+          <button class="tablinks" onclick="openBlog(event, 'Interests')">Interests</button>
+        </div>
+        <!-- Tab content -->
+        <div id="Background" class="tabcontent">
+          <h3>My Background</h3>
+          <h5>Before I was a developer, I worked in media.</h5>
+          <div class="box alt">
+            <div class="row gtr-50 gtr-uniform">
+              <div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+              <div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+              <div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+            </div>
+          </div>
+          <p>From working as a video producer, video editor, and social media manager</p>
+
+        </div>
+
+        <div id="Education" class="tabcontent">
+          <h3>My Education</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="Interests" class="tabcontent">
+          <h3>Interests</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+      </section>
+      <section>
+      <div class="nav row">
+        <div class="col-8 col-12-small">
+          <ul class="labeled-icons">
+            <li>
+              <a href="index.html" class="icon solid fa-arrow-left">
+                Back to home
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+  </body>
+  <script>
+    function openBlog(evt, blogName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  console.log(evt);
+  if (evt.currentTarget.classList.contains("active")) {
+    document.getElementById(blogName).style.display = "none";
+    evt.currentTarget.className.remove("active");
+
+  } else {
+    document.getElementById(blogName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+  }
+  }
+  </script>
+</html>
