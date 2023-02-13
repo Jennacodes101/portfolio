@@ -9,7 +9,8 @@
     document.getElementById(tabName).click();
   }
   else {
-    document.getElementById("defaultOpen").click();
+    console.log("defaultOpen")
+    document.getElementById("dejavuOpen").click();
   }
 
   function openProject(evt, projectName) {
