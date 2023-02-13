@@ -14,9 +14,9 @@
       <div class="">
         <h2 class="align-center strong">PROJECTS</h2>
         <ul class="actions stacked">
-          <li><button id="defaultOpen" class="button primary fit project-links active" onclick="openProject(event,'DejaVu')">Deja Vu</button></li>
-          <li><button class="button primary fit project-links" onclick="openProject(event,'Quizzle')">Quizzle</button></li>
-          <li><button class="button primary fit project-links" onclick="openProject(event,'Watchlist')">Watchlist</button></li>
+          <li><button id="defaultOpen dejavuOpen" class="button primary fit project-links active" onclick="openProject(event,'DejaVu')">Deja Vu</button></li>
+          <li><button id="quizzleOpen"class="button primary fit project-links" onclick="openProject(event,'Quizzle')">Quizzle</button></li>
+          <li><button id="watchlistOpen" class="button primary fit project-links" onclick="openProject(event,'Watchlist')">Watchlist</button></li>
           <li><button class="button primary fit project-links" onclick="openProject(event,'CocoActiv')">Coco Activ</button></li>
         </ul>
       </div>
@@ -153,30 +153,6 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="assets/js/openProject.js"></script>
 
-  <script>
-  document.getElementById("defaultOpen").click();
-
-    function openProject(evt, projectName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-  console.log("here")
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("projectcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(projectName).style.display = "block";
-  evt.currentTarget.className += " active";
-  }
-  </script>
 </html>
