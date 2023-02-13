@@ -2390,8 +2390,8 @@ input, select, textarea {
   font-size: 50px;
 }
 .skills:hover{
-  font-size: 60px;
-  transition: .5s;
+  font-size: 55.5px;
+  transition: .4s;
 }
 .skills-item {
   text-align: center !important;
@@ -2629,7 +2629,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/iceland3.jpg"), url("../../images/julian-v.jpg");
+		background-image: url("images/iceland3.jpg"), url("../../images/iceland3.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -3075,6 +3075,9 @@ input, select, textarea {
 				#header > .inner {
 					margin-bottom: 0;
 				}
+        #header{
+          background-size: 250% !important;
+        }
 
 		/* Footer */
 
@@ -3282,3 +3285,7 @@ input, select, textarea {
 			}
 
 	}
+
+  .mb-2{
+    margin-bottom: 50px;
+  }

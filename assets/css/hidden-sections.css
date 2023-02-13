@@ -9,9 +9,9 @@
 
 /* Create an active/current tablink class */
 button.sectionlinks.active {
-  background-color: rgb(48, 45, 45) !important;
-  color: #ffffff !important;
-  border:rgb(48, 45, 45);
+  background-color: rgb(237, 237, 237);
+  color: #49bf9d !important;
+  border: #49bf9d 3px solid !important;
 }
 
 /* Style the tab content */

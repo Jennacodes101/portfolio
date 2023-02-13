@@ -1,7 +1,7 @@
 
 
 var typed = new Typed("#typed_bio",{
-  strings: ["Web Developer", "Rubyist","life long learner", "Full-stack Developer",] ,
+  strings: [, "Full-Stack Developer"] ,
   typeSpeed: 100,
   backSpeed: 100,
   loop: false
