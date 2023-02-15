@@ -3289,3 +3289,38 @@ input, select, textarea {
   .mb-2{
     margin-bottom: 50px;
   }
+.border-bottom {
+  border-bottom: solid 2px #efefef;
+}
+
+.btn-projects {
+  border: none;
+  background: none !important;
+  color: #fff ;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+  .btn-projects:hover:not(.active) {
+    letter-spacing: 3px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+  }
+  .btn-projects:active {
+    color: #c0c0c0;
+    letter-spacing: normal;
+    font-size: 1.3em;
+    transition: .1s ease-in-out;
+  }
+.active {
+    color: #49bf9d;
+    font-size: 1.3em;
+  }
+
+  .disabled{
+    pointer-events: none;
+    color: #a2a2a2;
+  }
+
+  .white {
+    color: #fff;
+  }
