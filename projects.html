@@ -12,12 +12,12 @@
 
     <header id="header">
       <div class="">
-        <h2 class="align-center strong">PROJECTS</h2>
-        <ul class="actions stacked">
-          <li><button id="dejavuOpen" class="button primary fit project-links active" onclick="openProject(event,'DejaVu')">Deja Vu</button></li>
-          <li><button id="quizzleOpen"class="button primary fit project-links" onclick="openProject(event,'Quizzle')">Quizzle</button></li>
-          <li><button id="watchlistOpen" class="button primary fit project-links" onclick="openProject(event,'Watchlist')">Watchlist</button></li>
-          <li><button class="button primary fit project-links" onclick="openProject(event,'CocoActiv')">Coco Activ</button></li>
+        <h2 class="align-center strong border-bottom">PROJECTS</h2>
+        <ul id="projectNav" class="actions stacked align-center">
+          <li><button id="dejavuOpen" class="btn-projects project-links active" onclick="openProject(event,'DejaVu')">Deja Vu</button></li>
+          <li><button id="quizzleOpen"class="btn-projects project-links" onclick="openProject(event,'Quizzle')">Quizzle</button></li>
+          <li><button id="watchlistOpen" class="btn-projects project-links" onclick="openProject(event,'Watchlist')">Watchlist</button></li>
+          <li><button class="btn-projects project-links disabled" onclick="openProject(event,'CocoActiv')">Coco Activ</button></li>
         </ul>
       </div>
     </header>
@@ -123,10 +123,8 @@
           <p><span class="image right"><img src="images/avatar.jpg" alt="" /></span> This web application was built using Python with the Flask web framework and utilized SQLite3 as the database. The front-end was developed using HTML5, CSS, and the Bootstrap 5.1 framework. Jinja2 was used as the template engine for generating HTML content.
           </p>
           <h3>Challenges and thought process</h3>
-          Initially, I had planned to update new questions and streaks automatically at 00:00 UTC time, but I encountered challenges when trying to implement this. As an alternative, I created a file that serves an "almost automation" function when the index is loaded. It always calls the check_date() function that performs a SQL query to check whether the date has changed or not. If the date is different, start_day() method is called which deletes and inserts new random questions and checks users' streaks.
-            In the update_streaks() method, the program iterates through all the users, check if they played yesterday, and compare their current streak with their previous streaks. If the user played then their streak iterates, if not their streak returns to 0.
-          <p>
-
+          <p>Initially, I had planned to update new questions and streaks automatically at 00:00 UTC time, but I encountered challenges when trying to implement this. As an alternative, I created a file that serves an "almost automation" function when the index is loaded. It always calls the check_date() function that performs a SQL query to check whether the date has changed or not. If the date is different, the start_day() method is called which deletes and inserts new random questions and checks users' streaks.
+            In the update_streaks() method, the program iterates through all the users, check if they played yesterday. If the user played then their streak iterates, if not their streak returns to 0.
           </p>
         </section>
 
@@ -142,30 +140,31 @@
             <li>Stimulus</li>
             <li>HTML5</li>
             <li>SCSS</li>
-            <li> Mapbox API</li>
+            <li> The Movie Database API</li>
             <li>AJAX</li>
             <li> Cloudinary API </li>
             <li>Bootstrap 5.1</li>
           </ul>
+          <div>
+            <ul class="actions">
+              <li> <a href="https://github.com/Jennacodes101/rails-watchlist" class="button" target="_blank">Github</a></li>
+            </ul>
+          </div>
           <div class="box alt">
             <div class="row gtr-50 gtr-uniform">
-              <div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-              <div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-              <div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+              <div class="col-12"><span class="image fit"><img src="images/watchlist.png"></span></div>
             </div>
           </div>
         </header>
         <h2>Summary</h2>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga corrupti expedita facere consequatur magnam sit nobis itaque dignissimos cum, voluptatem autem eum distinctio alias, laudantium eligendi sint deleniti, tenetur excepturi?</p>
-        <h5>Left &amp; Right</h5>
-        <p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-        <p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+        <p> A web application where users can create their own movie watchlists and follow other watchlists. As well as rate other watchlists </p>
+        <h2> More info coming soon!</h2>
       </section>
     </div>
     <div id="CocoActiv" class="projectcontent"></div>
     <footer id="footer">
       <div class="inner">
-        <a href="index.html" class="icon solid fa-arrow-left">
+        <a href="index.html" class="icon solid fa-arrow-left white">
           Back to home
         </a>
       </div>
@@ -181,5 +180,6 @@
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="assets/js/openProject.js"></script>
+  <script src="assets/js/adjustProjects.js"></script>
 
 </html>
